@@ -10,9 +10,10 @@ import static TAWorkshop.steps.registerSteps.driver;
 
 public class commonHooks {
 
-    //Cucumber supports hooks, which are blocks of code that run before or after
-    // each scenario. You can define them anywhere in your project or step definition
-    // layers, using the methods @Before and @After.
+    //Hooks are blocks of code that run before or after
+    // each scenario. You can define them anywhere
+    // in your project or step definition layers,
+    // using the methods @Before and @After.
 
     @Before
     public void setup() {

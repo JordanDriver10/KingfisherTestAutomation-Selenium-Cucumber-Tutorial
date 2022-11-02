@@ -1,12 +1,12 @@
 @TestTag
-Feature: Sign in
+Feature: Register
 
-  Scenario Outline: User signs in with email and password
-    Given user is on the demo sign in page
-    When user enters <emailAddress> and creates account
-    And user enters personal information
-    Then Sign in should be successful
+  Scenario Outline:
+    Given
+    When
+    And
+    Then
 
     Examples:
-      | emailAddress                  |
-      | Jordan.driver@kingfisher.com  |
+      |                               |
+      |                               |
