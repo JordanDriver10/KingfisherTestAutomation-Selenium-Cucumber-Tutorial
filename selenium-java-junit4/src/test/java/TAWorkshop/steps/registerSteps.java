@@ -70,7 +70,7 @@ public class registerSteps {
         //Then wait until an expected condition is visible
 
 
-        //Assert that we have successfully registered before ending the test
+        //Assert that we have successfully registered
 
     }
 
