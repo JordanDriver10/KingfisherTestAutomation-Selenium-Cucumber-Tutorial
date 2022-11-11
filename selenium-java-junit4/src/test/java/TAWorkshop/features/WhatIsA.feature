@@ -7,5 +7,5 @@ Feature: Name of the feature under test (Sign In)
 #  Then - What should happen if the condition mentioned in WHEN is satisfied
 
     Examples: (User functionalities)
-      | userName        | password          |
-      | your name       | your password     |
+      | userName     | password         |
+      | (your name)  | (your password)  |

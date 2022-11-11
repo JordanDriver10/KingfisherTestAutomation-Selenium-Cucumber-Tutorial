@@ -1,11 +1,11 @@
 package TAWorkshop.steps;
 
-import TAWorkshop.DriverManager;
+import static TAWorkshop.DriverManager.driver;
 
+import TAWorkshop.DriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-import static TAWorkshop.steps.registerSteps.driver;
 
 
 public class commonHooks {

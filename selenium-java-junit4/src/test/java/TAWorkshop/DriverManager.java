@@ -17,6 +17,8 @@ public class DriverManager {
     // This means later if we need to change from Chrome to Firefox,
     // we don't have to go into every test script to change the driver
 
+    public static WebDriver driver;
+
     public static WebDriver getDriver() {
         WebDriver driver;
         switch (System.getProperty("browser", "chrome").toLowerCase()) {
