@@ -9,30 +9,39 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>11</maven.compiler.source>
-        <maven.compiler.target>11</maven.compiler.target>
-        <junit.version>4.13.2</junit.version>
-        <cucumber.version>6.10.4</cucumber.version>
-        <selenium.version>3.141.59</selenium.version>
-        <webdrivermanager.version>4.4.3</webdrivermanager.version>
+        <maven.compiler.source>17</maven.compiler.source> <!-- Matches your Java version -->
+        <maven.compiler.target>17</maven.compiler.target>
+        <junit.version>4.13.2</junit.version> <!-- Still latest for JUnit 4 -->
+        <cucumber.version>7.15.0</cucumber.version> <!-- Latest Cucumber-JVM version -->
+        <selenium.version>4.20.0</selenium.version> <!-- Latest Selenium 4.x -->
+        <webdrivermanager.version>5.8.0</webdrivermanager.version> <!-- Latest WDM -->
     </properties>
 
+
     <dependencies>
+        <!-- JUnit 4 (still valid if you're not migrating to JUnit 5) -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
+
+        <!-- Selenium 4 -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>${selenium.version}</version>
         </dependency>
+
+        <!-- WebDriverManager 5 -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
+
+        <!-- Cucumber 7 -->
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
@@ -43,6 +52,14 @@
             <artifactId>cucumber-junit</artifactId>
             <version>${cucumber.version}</version>
         </dependency>
+
+        <!-- Optional: Add cucumber-picocontainer if using dependency injection -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
     </dependencies>
+
 
 </project>

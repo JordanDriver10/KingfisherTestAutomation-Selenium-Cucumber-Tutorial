@@ -9,8 +9,5 @@
         <module name="selenium-java-junit4" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="selenium-java-junit4" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
